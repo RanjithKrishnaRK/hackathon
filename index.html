@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpeakEase AI - Stuttering Rehabilitation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <div class="logo">
+                <img src="https://api.iconify.design/carbon/microphone.svg" alt="Microphone icon" class="logo-icon">
+                <span>SpeakEase AI</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#testimonials">Success Stories</a></li>
+                <li><a href="#patient-form" class="btn-primary">Get Started</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Transform Your Speech with AI-Powered Rehabilitation</h1>
+                    <p>Experience breakthrough progress in stuttering therapy using advanced artificial intelligence. 
+                       Practice speaking confidently in a supportive, judgment-free environment.</p>
+                    <div class="hero-buttons">
+                        <a href="#patient-form" class="btn-primary">Start Free Trial</a>
+                        <a href="#learn" class="btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1516387938699-a93567ec168e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2671&q=80" 
+                         alt="AI Speech Therapy">
+                </div>
+            </div>
+        </section>
+
+        <section class="features" id="features">
+            <div class="container">
+                <h2>Why Choose SpeakEase AI?</h2>
+                <p class="section-subtitle">Innovative features designed to support your journey to fluent speech</p>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <img src="https://api.iconify.design/carbon/ai-status.svg" alt="AI icon" class="feature-icon">
+                        <h3>AI-Powered Analysis</h3>
+                        <p>Real-time feedback and analysis of speech patterns using advanced AI algorithms</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="https://api.iconify.design/carbon/chart-line.svg" alt="Chart icon" class="feature-icon">
+                        <h3>Progress Tracking</h3>
+                        <p>Detailed insights and progress reports to monitor your improvement over time</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="https://api.iconify.design/carbon/headset.svg" alt="Headset icon" class="feature-icon">
+                        <h3>24/7 Support</h3>
+                        <p>Access to professional speech therapists and continuous support whenever you need</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="https://api.iconify.design/carbon/laptop.svg" alt="Laptop icon" class="feature-icon">
+                        <h3>Practice Anywhere</h3>
+                        <p>Practice from the comfort of your home or anywhere with an internet connection</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="patient-form" id="patient-form">
+            <div class="container">
+                <h2>Start Your Journey Today</h2>
+                <p class="section-subtitle">Help us understand your needs better by providing some information</p>
+                
+                <form class="form-container">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Age</label>
+                            <input type="number" id="age" name="age" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="experience">Previous Speech Therapy Experience</label>
+                        <textarea id="experience" name="experience" rows="4"></textarea>
+                    </div>
+
+                    <div class="file-upload-section">
+                        <div class="file-upload-group">
+                            <label for="medical-reports">Medical Reports (PDF)</label>
+                            <div class="file-upload-area" id="medical-reports-area">
+                                <img src="https://api.iconify.design/carbon/document-pdf.svg" alt="PDF icon" class="upload-icon">
+                                <span>Drag & drop or click to upload medical reports</span>
+                                <input type="file" id="medical-reports" name="medical-reports" accept=".pdf" multiple>
+                            </div>
+                        </div>
+
+                        <div class="file-upload-group">
+                            <label for="speech-samples">Speech Samples (Audio)</label>
+                            <div class="file-upload-area" id="speech-samples-area">
+                                <img src="https://api.iconify.design/carbon/audio-file.svg" alt="Audio icon" class="upload-icon">
+                                <span>Drag & drop or click to upload speech samples</span>
+                                <input type="file" id="speech-samples" name="speech-samples" accept="audio/*" multiple>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="goals">Your Goals and Expectations</label>
+                        <textarea id="goals" name="goals" rows="4"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary submit-btn">Submit for AI Analysis</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <h2>Ready to Transform Your Speech?</h2>
+                <p>Join thousands of others who have improved their fluency with SpeakEase AI</p>
+                <a href="#patient-form" class="btn-primary">Start Your Free Trial Today</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
